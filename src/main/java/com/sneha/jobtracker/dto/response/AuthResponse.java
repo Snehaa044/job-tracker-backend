@@ -1,0 +1,21 @@
+package com.sneha.jobtracker.dto.response;
+
+public class AuthResponse {
+    private String token;
+    private String email;
+    private String fullName;
+
+    public AuthResponse() {}
+    public AuthResponse(String token, String email, String fullName) {
+        this.token = token;
+        this.email = email;
+        this.fullName = fullName;
+    }
+
+    public String getToken() { return token; }
+    public void setToken(String v) { this.token = v; }
+    public String getEmail() { return email; }
+    public void setEmail(String v) { this.email = v; }
+    public String getFullName() { return fullName; }
+    public void setFullName(String v) { this.fullName = v; }
+}
